@@ -1,0 +1,81 @@
+2025-04-09 07:00:48,482 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 07:00:48,482 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 07:00:48,483 - INFO -  * Restarting with stat
+2025-04-09 07:00:50,085 - WARNING -  * Debugger is active!
+2025-04-09 07:00:50,088 - INFO -  * Debugger PIN: 723-425-972
+2025-04-09 07:00:52,837 - INFO - 127.0.0.1 - - [09/Apr/2025 07:00:52] "GET / HTTP/1.1" 200 -
+2025-04-09 07:01:01,934 - INFO - 127.0.0.1 - - [09/Apr/2025 07:01:01] "[32mPOST /skanna-enskild HTTP/1.1[0m" 302 -
+2025-04-09 07:01:02,038 - ERROR - Fel vid hämtning från Adlibris för ISBN 9781292264455: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3D9781292264455%2Bsite%253Aadlibriscampus.com%26num%3D3%26hl%3Den%26start%3D0%26safe%3Dactive&hl=en&q=EgQu71uzGI7-178GIjC74-0Jg33EXgFvtcyL9JIJNqVW6a6VUJZPOjA4DteLCifPMbqG-UZApZvx4lWtFdkyAnJSWgFD
+2025-04-09 07:01:02,702 - ERROR - Fel vid hämtning från Akademibokhandeln för ISBN 9781292264455: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3D9781292264455%2Bsite%253Aakademibokhandeln.se%26num%3D3%26hl%3Den%26start%3D0%26safe%3Dactive&hl=en&q=EgQu71uzGI7-178GIjB1l08kNlhbFISmhM5rnrlTBeJ7MhKPPXN59My9WQbUpmokUxuh5P54gdMqo-72jGMyAnJSWgFD
+2025-04-09 07:01:02,703 - INFO - 127.0.0.1 - - [09/Apr/2025 07:01:02] "GET /skanna-enskild HTTP/1.1" 200 -
+2025-04-09 07:01:03,494 - INFO - 127.0.0.1 - - [09/Apr/2025 07:01:03] "GET /graph/embed?isbn=9781292264455&type=forsaljning HTTP/1.1" 200 -
+2025-04-09 07:01:03,506 - INFO - 127.0.0.1 - - [09/Apr/2025 07:01:03] "GET /graph/embed?isbn=9781292264455&type=inkop HTTP/1.1" 200 -
+2025-04-09 07:02:54,512 - INFO -  * Detected change in 'D:\\bokpris-projekt\\bokpriser.py', reloading
+2025-04-09 07:02:54,670 - INFO -  * Restarting with stat
+2025-04-09 07:02:56,282 - WARNING -  * Debugger is active!
+2025-04-09 07:02:56,286 - INFO -  * Debugger PIN: 723-425-972
+2025-04-09 07:03:06,326 - INFO -  * Detected change in 'D:\\bokpris-projekt\\bokpriser.py', reloading
+2025-04-09 07:03:06,468 - INFO -  * Restarting with stat
+2025-04-09 07:03:08,043 - WARNING -  * Debugger is active!
+2025-04-09 07:03:08,047 - INFO -  * Debugger PIN: 723-425-972
+2025-04-09 07:03:10,064 - INFO -  * Detected change in 'D:\\bokpris-projekt\\bokpriser.py', reloading
+2025-04-09 07:03:10,180 - INFO -  * Restarting with stat
+2025-04-09 07:03:11,751 - WARNING -  * Debugger is active!
+2025-04-09 07:03:11,754 - INFO -  * Debugger PIN: 723-425-972
+2025-04-09 07:03:15,783 - INFO -  * Detected change in 'D:\\bokpris-projekt\\bokpriser.py', reloading
+2025-04-09 07:03:15,957 - INFO -  * Restarting with stat
+2025-04-09 07:03:17,435 - WARNING -  * Debugger is active!
+2025-04-09 07:03:17,438 - INFO -  * Debugger PIN: 723-425-972
+2025-04-09 07:03:19,706 - INFO - 127.0.0.1 - - [09/Apr/2025 07:03:19] "GET / HTTP/1.1" 200 -
+2025-04-09 07:03:25,876 - INFO - 127.0.0.1 - - [09/Apr/2025 07:03:25] "[32mPOST /skanna-enskild HTTP/1.1[0m" 302 -
+2025-04-09 07:03:25,983 - ERROR - Fel vid hämtning från Adlibris för ISBN 9781292264455: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3D9781292264455%2Bsite%253Aadlibris.com%26num%3D3%26hl%3Den%26start%3D0%26safe%3Dactive&hl=en&q=EgQu71uzGJ3_178GIjCD_hq351QXdvycaOW4Rr-owtlKUPeOVDgNAFX5IhvH39Q3A7MNWUelxjucOP8ysbUyAnJSWgFD
+2025-04-09 07:03:26,544 - ERROR - Fel vid hämtning från Akademibokhandeln för ISBN 9781292264455: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3D9781292264455%2Bsite%253Aakademibokhandeln.se%26num%3D3%26hl%3Den%26start%3D0%26safe%3Dactive&hl=en&q=EgQu71uzGJ7_178GIjDZI9aP3EhD6TH25G4pB8TXNBGpvsAGiNlXSb7UfnLZgpRpaNx2_klhxuByewVhkNMyAnJSWgFD
+2025-04-09 07:03:26,544 - INFO - 127.0.0.1 - - [09/Apr/2025 07:03:26] "GET /skanna-enskild HTTP/1.1" 200 -
+2025-04-09 07:03:27,247 - INFO - 127.0.0.1 - - [09/Apr/2025 07:03:27] "GET /graph/embed?isbn=9781292264455&type=forsaljning HTTP/1.1" 200 -
+2025-04-09 07:03:27,247 - INFO - 127.0.0.1 - - [09/Apr/2025 07:03:27] "GET /graph/embed?isbn=9781292264455&type=inkop HTTP/1.1" 200 -
+2025-04-09 07:04:13,636 - INFO -  * Detected change in 'D:\\bokpris-projekt\\bokpriser.py', reloading
+2025-04-09 07:04:13,794 - INFO -  * Restarting with stat
+2025-04-09 07:05:30,552 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 07:05:30,552 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 07:05:30,553 - INFO -  * Restarting with stat
+2025-04-09 07:05:32,018 - WARNING -  * Debugger is active!
+2025-04-09 07:05:32,022 - INFO -  * Debugger PIN: 723-425-972
+2025-04-09 07:05:34,113 - INFO - 127.0.0.1 - - [09/Apr/2025 07:05:34] "GET / HTTP/1.1" 200 -
+2025-04-09 07:05:39,530 - INFO - 127.0.0.1 - - [09/Apr/2025 07:05:39] "[32mPOST /skanna-enskild HTTP/1.1[0m" 302 -
+2025-04-09 07:05:39,636 - ERROR - Fel vid hämtning från Adlibris för ISBN 9781292264455: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3D9781292264455%2Bsite%253Aadlibris.com%26num%3D3%26hl%3Den%26start%3D0%26safe%3Dactive&hl=en&q=EgQu71uzGKOA2L8GIjAyZ3Ph82JdUqvvN9XNnTg5vudMBEvTjomrnpOpNIAjNt9gDSyowvJI8QT3SJAPj4gyAnJSWgFD
+2025-04-09 07:05:39,720 - INFO - Pris sparat: ISBN 9781292264455, butik studentapan, pris 0.0
+2025-04-09 07:05:41,079 - INFO - Bokus baspris för ISBN 9781292264455: 1079.0
+2025-04-09 07:05:41,079 - INFO - Bokus rabatterat pris för ISBN 9781292264455: 971.10 kr
+2025-04-09 07:05:41,080 - INFO - Pris sparat: ISBN 9781292264455, butik bokus, pris 971.1
+2025-04-09 07:05:41,188 - ERROR - Fel vid hämtning från Akademibokhandeln för ISBN 9781292264455: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3D9781292264455%2Bsite%253Aakademibokhandeln.se%26num%3D3%26hl%3Den%26start%3D0%26safe%3Dactive&hl=en&q=EgQu71uzGKWA2L8GIjCWEF8_fVd-KX9KvqliRsAOrU5UoGykIYK1AOyGig_pl7he3yZEldDJg8sKMX2yYSoyAnJSWgFD
+2025-04-09 07:05:41,188 - INFO - 127.0.0.1 - - [09/Apr/2025 07:05:41] "GET /skanna-enskild HTTP/1.1" 200 -
+2025-04-09 07:05:41,275 - INFO - Genererar graf för ISBN 9781292264455, typ forsaljning, format embed
+2025-04-09 07:05:41,276 - INFO - Genererar graf för ISBN 9781292264455, typ inkop, format embed
+2025-04-09 07:05:41,282 - INFO - Läste CSV, totalt 544 rader
+2025-04-09 07:05:41,282 - INFO - Läste CSV, totalt 544 rader
+2025-04-09 07:05:41,288 - INFO - Filtrerad data: 10 rader för ISBN 9781292264455
+2025-04-09 07:05:41,288 - INFO - Filtrerad data: 5 rader för ISBN 9781292264455
+2025-04-09 07:05:41,750 - INFO - 127.0.0.1 - - [09/Apr/2025 07:05:41] "GET /graph/embed?isbn=9781292264455&type=inkop HTTP/1.1" 200 -
+2025-04-09 07:05:41,762 - INFO - 127.0.0.1 - - [09/Apr/2025 07:05:41] "GET /graph/embed?isbn=9781292264455&type=forsaljning HTTP/1.1" 200 -
+2025-04-09 07:05:56,239 - ERROR - Fel vid hämtning från Adlibris för ISBN 9781292264455: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3D9781292264455%2Bsite%253Aadlibris.com%26num%3D3%26hl%3Den%26start%3D0%26safe%3Dactive&hl=en&q=EgQu71uzGLSA2L8GIjCxhz_H5eURy2moEbibS6w8f0FSr3CP3sZyKspI3E2uvoU89DFsfFYl719qUNsdhRAyAnJSWgFD
+2025-04-09 07:05:56,347 - INFO - Pris sparat: ISBN 9781292264455, butik studentapan, pris 0.0
+2025-04-09 07:05:56,746 - INFO - Bokus baspris för ISBN 9781292264455: 1079.0
+2025-04-09 07:05:56,746 - INFO - Bokus rabatterat pris för ISBN 9781292264455: 971.10 kr
+2025-04-09 07:05:56,747 - INFO - Pris sparat: ISBN 9781292264455, butik bokus, pris 971.1
+2025-04-09 07:05:56,847 - ERROR - Fel vid hämtning från Akademibokhandeln för ISBN 9781292264455: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3D9781292264455%2Bsite%253Aakademibokhandeln.se%26num%3D3%26hl%3Den%26start%3D0%26safe%3Dactive&hl=en&q=EgQu71uzGLSA2L8GIjDjkH6VYKnEhJS-UQm21EXbHMr93vK3Jrb6u-LqD19asvCRblTkHxAryCRZCjDeajUyAnJSWgFD
+2025-04-09 07:05:56,847 - INFO - 127.0.0.1 - - [09/Apr/2025 07:05:56] "GET /skanna-enskild HTTP/1.1" 200 -
+2025-04-09 07:05:56,897 - INFO - Returnerar cachad graf för forsaljning_9781292264455_embed
+2025-04-09 07:05:56,901 - INFO - 127.0.0.1 - - [09/Apr/2025 07:05:56] "GET /graph/embed?isbn=9781292264455&type=forsaljning HTTP/1.1" 200 -
+2025-04-09 07:05:56,902 - INFO - Returnerar cachad graf för inkop_9781292264455_embed
+2025-04-09 07:05:56,906 - INFO - 127.0.0.1 - - [09/Apr/2025 07:05:56] "GET /graph/embed?isbn=9781292264455&type=inkop HTTP/1.1" 200 -
+2025-04-09 07:06:45,293 - INFO -  * Detected change in 'D:\\bokpris-projekt\\bokpriser.py', reloading
+2025-04-09 07:06:45,441 - INFO -  * Restarting with stat
+2025-04-09 07:10:30,818 - INFO -  * Restarting with stat
+2025-04-09 07:12:27,905 - INFO -  * Restarting with stat
+2025-04-09 07:12:32,530 - INFO -  * Restarting with stat
+2025-04-09 07:12:35,172 - INFO -  * Restarting with stat
+2025-04-09 07:12:37,787 - INFO -  * Restarting with stat
+2025-04-09 07:12:51,379 - INFO -  * Restarting with stat
+2025-04-09 07:19:44,412 - INFO -  * Restarting with stat

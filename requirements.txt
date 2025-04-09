@@ -1,0 +1,8 @@
+flask
+beautifulsoup4
+pandas
+matplotlib
+apscheduler
+playwright
+gunicorn
+requests 

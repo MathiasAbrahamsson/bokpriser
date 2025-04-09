@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+    window.didomiConfig = {
+        // Use separate Didomi consent dialogs for each culture
+        cookies: {
+            didomiTokenCookieName: 'didomi_tDFLmrpD',
+            iabCookieName: 'iab_tDFLmrpD',
+            storageSources: {
+                cookies: true,
+                localStorage: false
+            }
+        }
+    };
+
+    window.gdprAppliesGlobally = true; (function () {
+        function a(e) {
+            if (!window.frames[e]) {
+                if (document.body && document.body.firstChild) { var t = document.body; var n = document.createElement("iframe"); n.style.display = "none"; n.name = e; n.title = e; t.insertBefore(n, t.firstChild) }
+                else { setTimeout(function () { a(e) }, 5) }
+            }
+        } function e(n, r, o, c, s) {
+            function e(e, t, n, a) { if (typeof n !== "function") { return } if (!window[r]) { window[r] = [] } var i = false; if (s) { i = s(e, t, n) } if (!i) { window[r].push({ command: e, parameter: t, callback: n, version: a }) } } e.stub = true; function t(a) {
+                if (!window[n] || window[n].stub !== true) { return } if (!a.data) { return }
+                var i = typeof a.data === "string"; var e; try { e = i ? JSON.parse(a.data) : a.data } catch (t) { return } if (e[o]) { var r = e[o]; window[n](r.command, r.parameter, function (e, t) { var n = {}; n[c] = { returnValue: e, success: t, callId: r.callId }; a.source.postMessage(i ? JSON.stringify(n) : n, "*") }, r.version) }
+            }
+            if (typeof window[n] !== "function") { window[n] = e; if (window.addEventListener) { window.addEventListener("message", t, false) } else { window.attachEvent("onmessage", t) } }
+        } e("__tcfapi", "__tcfapiBuffer", "__tcfapiCall", "__tcfapiReturn"); a("__tcfapiLocator"); (function (e, tgt) {
+            var t = document.createElement("script"); t.id = "spcloader"; t.type = "text/javascript"; t.async = true; t.src = "https://sdk.privacy-center.org/" + e + "/loader.js?target_type=notice&target=" + tgt; t.charset = "utf-8"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(t, n)
+        })("56b72b28-6231-4423-82bd-ce2bebfcc2db", "tDFLmrpD")})();
+</script>            <script>
+                window.DY = window.DY || {};
+                DY.recommendationContext = {"type":"PRODUCT","lng":"sv_sek","data":["9781292264455"]};
+
+                DY.productDecoratorApiUrl = "https://adlibrisprod.azure-api.net/dyproductdecorator";
+
+                window.didomiOnReady = window.didomiOnReady || [];
+                window.didomiOnReady.push(function (didomi) { 
+                    /** Since we cannot use the current dynamic yield consent status on the serverside we need to add a custom vendor and this is code is made to handle the intermediate phase*/
+                    var oldDYConsent = didomi.getUserConsentStatusForVendor("c:dynamic-yield");
+                    var newDYConsent = didomi.getUserConsentStatusForVendor("c:dynamicyi-FBeiCMtZ")
+                    if (typeof oldDYConsent !== 'undefined' || typeof newDYConsent !== 'undefined') {
+                        window.DY.userActiveConsent = { accepted: oldDYConsent || newDYConsent }
+                        window.DYO.ActiveConsent.updateConsentAcceptedStatus(oldDYConsent || newDYConsent);
+                    }
+                });
+
+            </script>
+        <link rel="preconnect" href="//cdn-eu.dynamicyield.com">
+        <link rel="preconnect" href="//st-eu.dynamicyield.com">
+        <link rel="preconnect" href="//rcom-eu.dynamicyield.com">
+        <link rel="dns-prefetch" href="//cdn-eu.dynamicyield.com">
+        <link rel="dns-prefetch" href="//st-eu.dynamicyield.com">
+        <link rel="dns-prefetch" href="//rcom-eu.dynamicyield.com">
+        <script type='text/javascript' src='//cdn-eu.dynamicyield.com/api/9877482/api_dynamic.js'></script>
+        <script type='text/javascript' src='//cdn-eu.dynamicyield.com/api/9877482/api_static.js'></script>
+
+
+
+<script>
+    var dataLayer = dataLayer || [];
+    dataLayer.push({ "google_tag_params":{"ecomm_totalvalue":"","ecomm_pagetype":"siteview","ecomm_prodid":"","ecomm_pname":"","ecomm_pvalue":"","ecomm_quantity":"","ecomm_category":""} })
+;
+</script>
+<script type="text/javascript">
+        var dataLayer = dataLayer || [];
+        dataLayer.push({
+            'UAID': 'UA-27333980-1',
+            'GA4ID': 'G-QX2HYF1FQH',
+            'pageView': ''
+        });
+</script>
+
+
+
+
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window, document, 'script', 'dataLayer', 'GTM-MFT3M8');</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript">
+    window.didomiEventListeners = window.didomiEventListeners || [];
+    window.didomiEventListeners.push({
+        event: 'sync.ready', // Runs when SDK has done loading (didomi is ready)
+        listener: function () {
+            if (window.initGoogleTagManagerScripts) {
+                window.initGoogleTagManagerScripts()
+            }
+        }
+    });
+    window.didomiOnReady = window.didomiOnReady || [];
+    window.didomiOnReady.push(function (didomi) {
+        var exponeaConsent = didomi.getUserConsentStatusForVendor("c:exponea-6cAnaWH4");
+        if (typeof exponeaConsent !== 'undefined') {
+            var dataLayer = window.dataLayer || [];
+            dataLayer.push({
+                'event': 'exponeaConsent',
+                'consentStatus': exponeaConsent,
+                'exponeaToken': '44190048-6152-11eb-a56d-ae06effdc80d'
+            });
+        } 
+    });
+</script>
+
+
+<title>Introduction to Econometrics, Global Edition - James Stock, Mark Watson - h&#228;ftad (9781292264455) | Adlibris Bokhandel </title>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, user-scalable=yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="google-site-verification" content="O_rr-t6r0HlV1ZD2noOVyGfAMJ4TeTXG638F53Kv65A"/>
+<meta name="theme-color" content="#ED1C24"/>
+    <link rel="manifest" href="/app-manifest-se.json">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="h&#228;ftad, 2019. K&#246;p boken Introduction to Econometrics, Global Edition av James Stock, Mark Watson (ISBN 9781292264455) hos Adlibris. Fraktfritt &#246;ver 349 kr Alltid bra priser och snabb leverans. | Adlibris" />
+
+
+<link rel="icon" type="image/png" href="/Staticimages/favicon/favicon.png?v=3">
+<link rel="icon" type="image/svg+xml" href="/Staticimages/favicon/favicon.svg?v=3">
+
+<link rel="apple-touch-icon" href="/Staticimages/TouchIcons/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/Staticimages/TouchIcons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/Staticimages/TouchIcons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/Staticimages/TouchIcons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/Staticimages/TouchIcons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/Staticimages/TouchIcons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/Staticimages/TouchIcons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/Staticimages/TouchIcons/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/Staticimages/TouchIcons/apple-touch-icon-180x180.png" />
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://www.adlibris.com/se",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.adlibris.com/se/sok?&q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+<link rel="preload" crossorigin="anonymous" href="https://s3.adlibris.com/dist/long_term_cache202409181015/Roboto-Regular.woff2" as="font">
+<link rel="preload" crossorigin="anonymous" href="https://s3.adlibris.com/dist/long_term_cache202409181015/Roboto-Bold.woff2" as="font">
+<link rel="preload" crossorigin="anonymous" href="https://s3.adlibris.com/dist/long_term_cache202409181015/Montserrat-Regular.woff2" as="font">
+<link rel="preload" crossorigin="anonymous" href="https://s3.adlibris.com/dist/long_term_cache202409181015/Montserrat-SemiBold.woff2" as="font">
+<link rel="preload" crossorigin="anonymous" href="https://s3.adlibris.com/dist/long_term_cache202409181015/Montserrat-Bold.woff2" as="font">
+<link rel="preload" crossorigin="anonymous" href="https://s3.adlibris.com/dist/long_term_cache202409181015/material-icons.woff" as="font">
+<style>@font-face{font-family:'Montserrat';font-style:normal;font-weight:700;font-display:optional;src:local("Montserrat Bold"),local("Montserrat-Bold"),url(https://s3.adlibris.com/dist/long_term_cache202409181015/Montserrat-Bold.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Montserrat';font-style:normal;font-weight:400;font-display:optional;src:local("Montserrat Regular"),local("Montserrat-Regular"),url(https://s3.adlibris.com/dist/long_term_cache202409181015/Montserrat-Regular.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Montserrat';font-style:normal;font-weight:600;font-display:optional;src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url(https://s3.adlibris.com/dist/long_term_cache202409181015/Montserrat-SemiBold.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:optional;src: local("Roboto"), local("Roboto-Regular"), url(https://s3.adlibris.com/dist/long_term_cache202409181015/Roboto-Regular.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:optional;src:local("Roboto Bold"),local("Roboto-Bold"),url(https://s3.adlibris.com/dist/long_term_cache202409181015/Roboto-Bold.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}[data-js-hook-page-layout][data-initialized="false"] .page-header{position:relative;background-color:white;padding:12px 0 0;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border-bottom:1px solid #f2f2f2}@media (min-width: 1024px){[data-js-hook-page-layout][data-initialized="false"] .page-header{-ms-flex-wrap:nowrap;flex-wrap:nowrap;padding:12px 0;-webkit-box-align:center;-ms-flex-align:center;align-items:center}}@media (min-width: 1900px){[data-js-hook-page-layout][data-initialized="false"] .page-header .page-header__search{max-width:1280px;margin:0 auto}body.ie [data-js-hook-page-layout][data-initialized="false"] .page-header .page-header__search{max-width:none;margin:0 80px}[data-js-hook-page-layout][data-initialized="false"] .page-header .page-header__toggler--account{margin-left:26px}}[data-js-hook-page-layout][data-initialized="false"] .header-menu__wrapper{min-width:44px;height:38px}@media (min-width: 1024px){[data-js-hook-page-layout][data-initialized="false"] .header-menu__wrapper{min-width:56px}}[data-js-hook-page-layout][data-initialized="false"] .page-header__toggler{width:60px}[data-js-hook-page-layout][data-initialized="false"] .page-header__toggler--cart{width:70px}@media (min-width: 1900px){[data-js-hook-page-layout][data-initialized="false"] .page-header__toggler--account{margin-left:26px}}[data-js-hook-page-layout][data-initialized="false"] .page-header__search{width:100%;height:48px;margin:12px 8px 8px;border-radius:5px;border:1px solid #b5b5b5}[data-js-hook-page-layout][data-initialized="false"] .page-header__search::before{content:" ";height:100%;display:block}@media (min-width: 1024px){[data-js-hook-page-layout][data-initialized="false"] .page-header__search::before{display:none}}@media (min-width: 768px){[data-js-hook-page-layout][data-initialized="false"] .page-header__search{height:52px}}@media (min-width: 1024px){[data-js-hook-page-layout][data-initialized="false"] .page-header__search{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;width:auto;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;margin:0 80px;padding:0}}@media (min-width: 1900px){[data-js-hook-page-layout][data-initialized="false"] .page-header__search{max-width:1280px;margin:0 auto}}.footer--styling-not-loaded{opacity:0}html{font-size:16px;background-color:white;-ms-overflow-style:scrollbar}body{min-width:320px;font-family:"Montserrat",sans-serif;font-weight:400;line-height:1.25;color:#100a24;background:white}html,button,input,select,textarea{font-family:"Montserrat",sans-serif}p{font-family:"Roboto",sans-serif;line-height:1.6;margin:0 0 1em}p a{font-family:"Roboto",sans-serif}h1,.h1,h2,.h2,h3,.h3,h4,.h4{margin:0;color:#191919}h1 a:not(.btn),.h1 a:not(.btn),h2 a:not(.btn),.h2 a:not(.btn),h3 a:not(.btn),.h3 a:not(.btn),h4 a:not(.btn),.h4 a:not(.btn){color:black;-webkit-text-decoration-color:rgba(0,0,0,0.5);text-decoration-color:rgba(0,0,0,0.5);font-family:inherit}h1,.h1{font-size:1.375rem;font-weight:700}@media (min-width: 1024px){h1,.h1{font-size:1.625rem;line-height:1.25}}h2,.h2{font-size:1.25rem;font-weight:600}h3,.h3{font-size:1.125rem;font-weight:600}h3 a:not(.btn),.h3 a:not(.btn){color:#191919;text-decoration:underline;-webkit-text-decoration-color:rgba(25,25,25,0.5);text-decoration-color:rgba(25,25,25,0.5);-webkit-text-decoration-skip:edges;text-decoration-skip:edges}h3 a:not(.btn):hover,.h3 a:not(.btn):hover{color:black;-webkit-text-decoration-color:black;text-decoration-color:black}h4,.h4{font-size:1rem;font-weight:600}h4 a:not(.btn),.h4 a:not(.btn){color:#191919;text-decoration:underline;-webkit-text-decoration-color:rgba(25,25,25,0.5);text-decoration-color:rgba(25,25,25,0.5);-webkit-text-decoration-skip:edges;text-decoration-skip:edges}h4 a:not(.btn):hover,.h4 a:not(.btn):hover{color:black;-webkit-text-decoration-color:black;text-decoration-color:black}a.h4{color:#191919;text-decoration:underline;-webkit-text-decoration-color:rgba(25,25,25,0.5);text-decoration-color:rgba(25,25,25,0.5);-webkit-text-decoration-skip:edges;text-decoration-skip:edges}a.h4:hover{color:black;-webkit-text-decoration-color:black;text-decoration-color:black}</style>
+
+    <link rel="preload" as="style" href="https://s3.adlibris.com/dist/222aa76b8305d03cf28db43d1cb05dc1af4cb93d/global-styling.css" type="text/css">
+
+
+    <link rel="canonical" href="https://www.adlibris.com/se/bok/introduction-to-econometrics-global-edition-9781292264455" />
+
+
+
+
+
+<script>
+    window.footerData = {"Menus":[{"Header":"Adlibris","Links":[{"Text":"Om oss","Url":"https://www.adlibris.com/sv/om-adlibris/om-adlibris","AriaLabel":"Om oss","RemoveCulture":false,"ExternalLink":false},{"Text":"Välj land/språk","Url":"/","AriaLabel":"Välj land eller språk","RemoveCulture":true,"ExternalLink":false},{"Text":"<a href=\"https://www.adlibris.com/sv/pressrum\">Press</a>","Url":null,"AriaLabel":"Press","RemoveCulture":false,"ExternalLink":false},{"Text":"Adlibris Campus","Url":"https://adlibriscampus.com","AriaLabel":"Adlibris Campus","RemoveCulture":false,"ExternalLink":false},{"Text":"Adlibris Pocket","Url":"https://www.adlibris.com/sv/om-adlibris/adlibris-pocket","AriaLabel":"Adlibris Pocket","RemoveCulture":false,"ExternalLink":false},{"Text":"Bibliotek & Offentlig verksamhet","Url":"https://www.adlibris.com/storkund/","AriaLabel":"Bibliotek och offentlig verksamhet","RemoveCulture":false,"ExternalLink":false},{"Text":"Butiker","Url":"https://www.adlibris.com/sv/om-adlibris/adlibris-butiker","AriaLabel":"Butiker","RemoveCulture":false,"ExternalLink":false},{"Text":"Jobba hos oss","Url":"https://www.adlibris.com/sv/om-adlibris/jobba-pa-adlibris","AriaLabel":"Jobba hos oss","RemoveCulture":false,"ExternalLink":false},{"Text":"Adlibrispriset","Url":"https://www.adlibris.com/se/kampanj/adlibrispriset","AriaLabel":"Adlibrispriset","RemoveCulture":false,"ExternalLink":false}]},{"Header":"Mitt konto","Links":[{"Text":"Beställningar","Url":"https://www.adlibris.com/se/konto/orders","AriaLabel":"Beställningar","RemoveCulture":false,"ExternalLink":false},{"Text":"Önskelistor","Url":"https://www.adlibris.com/se/onskelista/watch","AriaLabel":"Önskelistor","RemoveCulture":false,"ExternalLink":false},{"Text":"Bevakningar","Url":"https://www.adlibris.com/se/bevakningar/watch","AriaLabel":"Bevakningar","RemoveCulture":false,"ExternalLink":false},{"Text":"Kunduppgifter","Url":"https://www.adlibris.com/se/konto/settings","AriaLabel":"Kunduppgifter","RemoveCulture":false,"ExternalLink":false},{"Text":"Digitalt bibliotek","Url":"https://www.adlibris.com/se/konto/library","AriaLabel":"Digitalt bibliotek","RemoveCulture":false,"ExternalLink":false}]},{"Header":"Kundservice","Links":[{"Text":"Kontakta oss","Url":"https://www.adlibris.com/sv/kundservice","AriaLabel":"Kontakta oss","RemoveCulture":false,"ExternalLink":false},{"Text":"Köpvillkor","Url":"https://www.adlibris.com/sv/om-adlibris/kop-och-leveransvillkor","AriaLabel":"Köpvillkor","RemoveCulture":false,"ExternalLink":false},{"Text":"Personuppgifter","Url":"https://www.adlibris.com/sv/om-adlibris/dina-personuppgifter","AriaLabel":"Personuppgifter","RemoveCulture":false,"ExternalLink":false},{"Text":"Produktsäkerhet","Url":"https://www.adlibris.com/sv/om-adlibris/produktsakerhet","AriaLabel":"Produktsäkerhet","RemoveCulture":false,"ExternalLink":false},{"Text":"Cookie Policy","Url":"https://www.adlibris.com/sv/om-adlibris/cookies","AriaLabel":"Cookie policy","RemoveCulture":false,"ExternalLink":false}]}],"Text":"Allt du vill läsa hittar du hos Adlibris. Skön- och facklitteratur från hela världen, barnböcker för alla åldrar och intressen, studentlitteratur, ljudböcker och e-böcker. Hos oss finns också ett stort utbud av garn, leksaker, pussel och spel. I Adlibris ingår även <a href=\"https://campusbokhandeln.se/\" target=\"_blank\">Adlibris Campus</a> och <a href=\" https://www.pocketshop.se/\" target=\"_blank\">Adlibris Pocket</a>. *Fri frakt gäller ekonomifrakt för privatpersoner och kan väljas i kassan vid köp över 349 kr. **Rabatten gäller endast nya prenumeranter, privatkunder, ej kurslitteratur, digitala böcker eller presentkort","CookieLink":{"Text":"Anpassa cookies","Url":"javascript:Didomi.preferences.show()","AriaLabel":"Anpassa cookies","RemoveCulture":false,"ExternalLink":false},"Icons":[{"Url":"/staticimages/partners/visa.png","SrcSet":"/staticimages/partners/visa.png 1x, /staticimages/partners/visa-2x.png 2x","AltText":"Visa"},{"Url":"/staticimages/partners/mastercard.png","SrcSet":"/staticimages/partners/mastercard.png 1x, /staticimages/partners/mastercard-2x.png 2x","AltText":"MasterCard"},{"Url":"/staticimages/partners/klarna.png","SrcSet":"/staticimages/partners/klarna.png 1x, /staticimages/partners/klarna-2x.png 2x","AltText":"Klarna"},{"Url":"/staticimages/partners/se/ica-paket.png","SrcSet":"/staticimages/partners/se/ica-paket.png 1x, /staticimages/partners/se/ica-paket-2x.png 2x","AltText":"Ica Paket"},{"Url":"/staticimages/partners/se/citymail.png","SrcSet":"/staticimages/partners/se/citymail.png 1x, /staticimages/partners/se/citymail-2x.png 2x","AltText":"Citymail"},{"Url":"/staticimages/partners/instabox.png","SrcSet":"/staticimages/partners/instabox.png 1x, /staticimages/partners/instabox-2x.png 2x","AltText":"Instabox"},{"Url":"/staticimages/partners/se/swish.png","SrcSet":"/staticimages/partners/se/swish.png 1x, /staticimages/partners/se/swish-2x.png 2x","AltText":"Swish"},{"Url":"/staticimages/partners/se/airmee.png","SrcSet":"/staticimages/partners/se/airmee.png 1x, /staticimages/partners/se/airmee-2x.png 2x","AltText":"Airmee"},{"Url":"/staticimages/partners/db-schenker.png","SrcSet":"/staticimages/partners/db-schenker.png 1x, /staticimages/partners/db-schenker-2x.png 2x","AltText":"DB Schenker"},{"Url":"/staticimages/partners/se/early-bird.png","SrcSet":"/staticimages/partners/se/early-bird.png 1x, /staticimages/partners/se/early-bird-2x.png 2x","AltText":"Early Bird"},{"Url":"/staticimages/partners/se/trygg-ehandel.png","SrcSet":"/staticimages/partners/se/trygg-ehandel.png 1x, /staticimages/partners/se/trygg-ehandel-2x.png 2x","AltText":"Trygg e-handel"},{"Url":"/staticimages/partners/se/hallbar-ehandel.png","SrcSet":"/staticimages/partners/se/hallbar-ehandel.png 1x, /staticimages/partners/se/hallbar-ehandel-2x.png 2x","AltText":"Hållbar e-handel"},{"Url":"/staticimages/partners/se/retailer-of-the-year-21.png","SrcSet":"/staticimages/partners/se/retailer-of-the-year-21.png 1x, /staticimages/partners/se/retailer-of-the-year-21-2x.png 2x","AltText":"Årets e-handlare 2021"}],"CopyrightText":"Adlibris AB Copyright © 1999-2025","MovableLinks":[{"Text":"Välj land/språk","Url":"/se/home/choosesite","AriaLabel":"Välj land eller språk","RemoveCulture":false,"ExternalLink":false},{"Text":"Bibliotek & Offentlig verksamhet","Url":"https://www.adlibris.com/storkund/","AriaLabel":"Bibliotek och offentlig verksamhet","RemoveCulture":false,"ExternalLink":false}],"SocialLinks":[{"Text":"Facebook","Url":"https://www.facebook.com/adlibris.com/","AriaLabel":"Facebook","RemoveCulture":false,"ExternalLink":false},{"Text":"Instagram","Url":"https://www.instagram.com/adlibris.com/","AriaLabel":"Instagram","RemoveCulture":false,"ExternalLink":false}],"UseDoubleOptIn":true,"Newsletter":{"EmailLabel":"15% rabatt på ditt första köp**  Ta del av kampanjer, nyheter och speciellt utvalda lästips!","EmailPlaceholder":"exempel@email.com","ValidationWrongFormatError":"Angiven e-postadress är ogiltig","ValidationEmptyFieldError":"Fältet kan inte vara tomt","ValidationPatternMismatchError":"Angiven e-postadress är ogiltig","ServiceUnavailableError":"Det gick inte att registrera dig, försök igen senare. Om problemet kvarstår kontakta kundservice. ","SubmitLabel":"Skicka","SubscriptionSuccessfulMessage":"Tack! Du prenumerar nu på våra nyhetsbrev","SubmitLabelSignedIn":"Ja tack"}};
+</script>
+
+    
+
+    <link rel="preload" as="style" href="https://s3.adlibris.com/dist/222aa76b8305d03cf28db43d1cb05dc1af4cb93d/product-page.css" rel="stylesheet" type="text/css">
+        <link rel="alternate" href="https://www.adlibris.com/no/bok/introduction-to-econometrics-global-edition-9781292264455" hreflang="no-no" />
+        <link rel="alternate" href="https://www.adlibris.com/fi/kirja/introduction-to-econometrics-global-edition-9781292264455" hreflang="fi-fi" />
+        <link rel="alternate" href="https://www.adlibris.com/fi/sv/bok/introduction-to-econometrics-global-edition-9781292264455" hreflang="sv-fi" />
+    <input name="__RequestVerificationToken" type="hidden" value="5U_es0mBu4yLjvm6lW6vTrlMaCt7Ch7hBbILYq7XOKhBvNIYpQa_KsOOzeTqGc_Pzu3lNzec_cRaCdIAjEzVCB9HTH01" />
+</head>
+<body class="sesv product">
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFT3M8"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div data-js-hook-page-layout data-initialized=&#39;false&#39; data-controller-name="product" data-action-name="show-slug">
+        
+
+<div class="page-header">
+    <div class="header-menu__wrapper ">
+    </div>
+    <div class="page-header__logo"><a href="#" class="page-header__logo__link"><svg class="adlibris-logo-svg" height="24" viewBox="0 0 136 33" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="1" width="136" height="29"><path d="M0 1.525h136V30H0V1.525Z" fill="#fff" /></mask><g mask="url(#a)"><path d="M68.114 21.494c0 2.701-.991 4.085-2.908 4.085-.925 0-1.52-.264-2.247-.989V13.523c.66-.626 1.388-.923 2.313-.923 1.85 0 2.842 1.35 2.842 3.92v4.974Zm-.628-12.978c-2.115 0-3.668 1.054-4.461 2.931V3.773h-5.552v25.363h2.446l2.148-3.393c.562 2.57 2.28 3.92 4.957 3.92 4.262 0 6.576-3.722 6.576-10.607 0-7.016-2.05-10.54-6.114-10.54ZM54.83 4.662c0 1.845-1.19 2.866-3.305 2.866-2.148 0-3.338-1.021-3.338-2.866 0-1.779 1.223-2.8 3.338-2.8s3.305 1.021 3.305 2.8Zm30.369 3.887c.43 0 .892.033 1.255.132v5.698c-.495-.197-1.19-.33-1.883-.33-1.421 0-2.644.56-3.206 1.417v13.67H75.88V8.944h2.61l2.644 4.052v-.066c0-2.866 1.421-4.381 4.065-4.381Zm9.286-3.887c0 1.845-1.157 2.866-3.272 2.866-2.148 0-3.338-1.021-3.338-2.866 0-1.779 1.223-2.8 3.338-2.8 2.082 0 3.272 1.021 3.272 2.8Zm-6.048 4.282h5.486v20.192h-5.486V8.944ZM31.268 24.59c-.727.725-1.322.989-2.247.989-1.917 0-2.908-1.384-2.908-4.085V16.52c0-2.57.991-3.92 2.842-3.92.925 0 1.652.297 2.313.923V24.59Zm-.066-13.143c-.793-1.877-2.346-2.931-4.461-2.931-4.065 0-6.114 3.524-6.114 10.54 0 6.885 2.314 10.607 6.576 10.607 2.677 0 4.396-1.35 4.957-3.92l2.148 3.393h2.446V3.773h-5.552v7.675Zm79.739 11.826c0 3.887-2.809 6.357-7.237 6.357-4.46 0-7.468-2.075-7.865-5.435l4.99-.89c.232 1.417 1.289 2.274 2.743 2.274 1.355 0 2.247-.824 2.247-2.076 0-1.416-1.09-2.305-3.337-2.734-4.428-.757-6.345-2.569-6.345-5.995 0-3.689 3.007-6.258 7.369-6.258 4.197 0 7.039 2.14 7.303 5.5l-4.99.89c-.033-1.383-.958-2.339-2.28-2.339-1.388 0-2.214.692-2.214 1.878 0 1.153.859 1.746 3.503 2.405 4.362 1.054 6.113 2.898 6.113 6.423Zm-70.916-19.5h5.519v25.363h-5.519V3.773ZM7.74 20.374l1.62-6.588.595-3.294.594 3.294 1.454 6.588H7.74ZM6.814 6.078.205 29.136h5.287l1.19-4.48h6.345l1.09 4.48h6.015L13.985 6.078h-7.17ZM48.75 8.944h5.486v20.192h-5.486V8.944Zm83.679 9.285a8.404 8.404 0 0 0-5.891 2.398 8.404 8.404 0 0 0-5.891-2.398V5.647c2.293 0 4.373.915 5.891 2.398a8.403 8.403 0 0 1 5.891-2.398V18.23ZM117.279 2.29v18.457l8.416 8.389h1.684l8.416-8.39V2.29h-18.516Z" fill="#D60D0D" /></g></svg></a></div>
+    <div class="page-header__toggler page-header__toggler--account "></div>
+    <div class="page-header__toggler page-header__toggler--cart"></div>
+    <div class="page-header__search"></div>
+</div>
+
+        
+
+
+
+<style>@media (min-width: 1024px){[data-js-hook-productpageindex][data-initialized=false] .product-page__product-container{position:relative;margin-left:auto;margin-right:auto;width:1280px;max-width:100%;padding-left:24px;padding-right:24px;-webkit-box-sizing:border-box;box-sizing:border-box}}[data-js-hook-productpageindex][data-initialized=false] .product--detailed-view{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}@media (min-width: 1024px){[data-js-hook-productpageindex][data-initialized=false] .product--detailed-view{margin-top:48px}}[data-js-hook-productpageindex][data-initialized=false] .product-page__product__left-content{position:relative}@media (min-width: 1024px){[data-js-hook-productpageindex][data-initialized=false] .product-page__product__left-content{-ms-flex-preferred-size:calc(37.5% - 16px);flex-basis:calc(37.5% - 16px);max-width:calc(37.5% - 16px);-webkit-box-sizing:border-box;box-sizing:border-box}}[data-js-hook-productpageindex][data-initialized=false] .product-page__product__left-content .product-page__loading-page-spinner{position:absolute;left:calc(50% - 12px);top:138px}[data-js-hook-productpageindex][data-initialized=false] .product-page__product__main-content{min-height:300px}@media (min-width: 1024px){[data-js-hook-productpageindex][data-initialized=false] .product-page__product__main-content{-ms-flex-preferred-size:calc(62.5% - 16px);flex-basis:calc(62.5% - 16px);max-width:calc(62.5% - 16px);-webkit-box-sizing:border-box;box-sizing:border-box}}[data-js-hook-productpageindex][data-initialized=false] .product-page__product__grid{width:100%}@media (min-width: 1024px){[data-js-hook-productpageindex][data-initialized=false] .product-page__product__grid{display:-webkit-box;display:-ms-flexbox;display:flex}}[data-js-hook-productpageindex][data-initialized=false] .product__description__text{height:50vh;width:100%;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}[data-js-hook-productpageindex][data-initialized=false] .image-placeholder{height:250px;width:100%;margin-bottom:16px;-webkit-animation-delay:3s;animation-delay:3s;background-color:#f2f2f2}@media (min-width: 1024px){[data-js-hook-productpageindex][data-initialized=false] .image-placeholder{height:272px;width:80%}}[data-js-hook-productpageindex][data-initialized=false] .product__title{margin-bottom:16px}[data-js-hook-productpageindex][data-initialized=false] .paragraph-placeholder{height:16px;margin-bottom:8px;width:80%;-webkit-animation-delay:3s;animation-delay:3s}[data-js-hook-productpageindex][data-initialized=false] .paragraph-placeholder:nth-child(2n){width:70%}[data-js-hook-productpageindex][data-initialized=false] .paragraph-placeholder:nth-child(3n){width:60%}[data-js-hook-productpageindex][data-initialized=false] .paragraph-placeholder:nth-child(5n){width:50%}.product-page--styling-not-yet-loaded *{-webkit-transition:none !important;transition:none !important}</style>
+
+
+<div data-js-hook-productPageIndex data-initialized="false">
+    <div class="product-page">
+        <div class="product-page__product-container">
+            <div class="product product--detailed-view product-page__product">
+                <div class="product-page__product__grid">
+                    <div class="product-page__product__left-content">
+                        <div class="image-placeholder loading-linear-gradient"></div>
+                    </div>
+                    <div class="product-page__product__main-content">
+                        <div class="product-page__product__main-content__grid">
+                            <h1 class="product__title">
+                                Introduction to Econometrics, Global Edition
+                                    <span class="product__title__sub-part">
+                                        <span class="product__title__format"><span class="product__title__delimiter">-&nbsp;</span>h&#228;ftad</span><span class="product__title__delimiter">,&nbsp;</span><span class="product__title__attributes">Engelska, 2019</span>
+                                    </span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    </div>
+
+    
+
+<script>
+    var globalData = {
+        menuStructure: {"ToggleButton":"Meny","ToggleButtonClose":"Stäng","Notice":"Kolla! Ny meny","CatgegoriesHeader":"","Categories":[{"Promoted":false,"SearchFilter":"categoryfacet:böcker","Header":"Böcker","Link":"","LinkNoFollow":true,"SvgIcon":"","CategoryPanelIndex":0,"Index":3,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":"Alla kategorier","link":"/se/sok?filter=categoryfacet:böcker"}]},{"sectionsHeader":"Kategorier A - Ö","sectionLinks":[{"header":"Barnböcker\r","link":"/se/barnbocker"},{"header":"Biografier​\r","link":"/se/avdelning/biografier-memoarer-7260"},{"header":"Data \u0026 IT\r","link":"/se/avdelning/datorer-it-8945"},{"header":"Deckare​\r","link":"/se/avdelning/deckare-kriminalromaner-7383"},{"header":"Djur \u0026 natur\r","link":"/se/avdelning/djur-natur-9307"},{"header":"Ekonomi \u0026 management\r","link":"/se/avdelning/ekonomi-management-7976"},{"header":"Filosofi \u0026 religion​\r","link":"/se/avdelning/filosofi-religion-9679"},{"header":"Hem \u0026 trädgård​\r","link":"/se/avdelning/hem-tradgard-9683"},{"header":"Historia​ \u0026 arkeologi\r","link":"https://www.adlibris.com/se/avdelning/historia-arkeologi-9678"},{"header":"Humor​ \u0026 presentböcker\r","link":"/se/avdelning/humor-presentbocker-9682"},{"header":"Hälsa​ \u0026 familj\r","link":"/se/avdelning/familj-halsa-9196"},{"header":"Juridik\r","link":"/se/avdelning/juridik-8145"},{"header":" Kokböcker, mat \u0026 dryck​\r","link":"/se/avdelning/kokbocker-mat-dryck-9129"},{"header":"Konst \u0026 musik​\r","link":"/se/avdelning/konst-musik-9676"},{"header":"Litteraturvetenskap\r","link":"/se/avdelning/litteraturvetenskap-7330"},{"header":"Läromedel​\r","link":"/se/avdelning/laromedel-9611"},{"header":"Medicin​\r","link":"/se/avdelning/medicin-8327"},{"header":"Naturvetenskap​ \u0026 teknik\r","link":"/se/avdelning/naturvetenskap-teknik-8524"},{"header":"Ordböcker \u0026 språk\r","link":"/se/avdelning/ordbocker-sprak-7287"},{"header":"Psykologi \u0026 pedagogik​\r","link":"/se/avdelning/psykologi-pedagogik-9685"},{"header":"Resor \u0026 geografi \r","link":"/se/avdelning/resor-geografi-9680"},{"header":"Samhälle \u0026 politik​\r","link":"/se/avdelning/samhalle-politik-7680"},{"header":"Skönlitteratur​\r","link":"/se/avdelning/skonlitteratur-7380"},{"header":"Sport, hobby \u0026 fritid​\r","link":"/se/avdelning/sport-fritid-9128"},{"header":"Tecknade serier​\r","link":"/se/avdelning/tecknade-serier-seriestrippar-9595?id=9595\u0026pn=4"},{"header":"Ungdomsböcker\r","link":"/se/avdelning/barn-ungdom-9508?id=9508\u0026pn=3\u0026filter=age_group:50"},{"header":"Unga vuxna","link":"/se/avdelning/barn-ungdom-9508?id=9508\u0026pn=3\u0026filter=age_group:60"}]},{"sectionsHeader":"Populära format","sectionLinks":[{"header":"E-böcker\r","link":"/se/kampanj/e-bocker"},{"header":"Ljudböcker\r","link":"/se/kampanj/ljudbocker"},{"header":"Pocket","link":"/se/kampanj/pocket"}]}]},{"Promoted":false,"SearchFilter":"","Header":"Barnböcker","Link":"/se/barnbocker","LinkNoFollow":false,"SvgIcon":"children-book-category-icon","CategoryPanelIndex":0,"Index":4,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":"Tips \u0026 topplistor\r","link":"/se/barnbocker"},{"header":"Läsålder 0-3 år\r","link":"/se/sok?filter=categoryfacet%3Ab%C3%B6cker\u0026filter=age_group%3A10"},{"header":"Läsålder 3-6 år\r","link":"/se/sok?filter=categoryfacet%3Aböcker\u0026filter=age_group%3A20"},{"header":"Läsålder 6-9 år\r","link":"/se/sok?filter=categoryfacet%3Aböcker\u0026filter=age_group%3A30"},{"header":"Läsålder 9-12 år\r","link":"/se/sok?filter=categoryfacet%3Aböcker\u0026filter=age_group%3A40"},{"header":"Läsålder 12-15 år\r","link":"/se/avdelning/lasniva-fran-ca-12-ar-7034"},{"header":"Läsålder 15+ år\r","link":"/se/avdelning/for-nyblivna-lasare-vuxna-7038"},{"header":"Den stora läsutmaningen\r","link":"/se/kampanj/den-stora-lasutmaningen"},{"header":"Barnboksserier\r","link":"/se/kampanj/harry-potter"},{"header":"Harry Potter\r","link":"/se/kampanj/harry-potter"},{"header":"Hitta rätt barnbok\r","link":"/se/kampanj/hitta-ratt-barnbok-extra-latt-att-lasa"},{"header":"Högläsningstips\r","link":"/se/kampanj/hoglasning"},{"header":"Roliga pysselböcker","link":"/se/kampanj/kul-pa-resan"}]}]},{"Promoted":false,"SearchFilter":"","Header":"Boknyheter","Link":"/se/kampanj/boktips-nyhet","LinkNoFollow":false,"SvgIcon":"book-category-icon","CategoryPanelIndex":0,"Index":5,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":"Aktuellt i media\r","link":"/se/kampanj/aktuellt-i-media"},{"header":"Förboka boknyheter\r","link":"/se/kampanj/forhandsbestall"},{"header":"Nya barn- och ungdomsböcker\r","link":"/se/kampanj/barnbocker-nyheter"},{"header":"Populära boknyheter","link":"/se/kampanj/boktips-nyhet"}]}]},{"Promoted":false,"SearchFilter":"","Header":"Böcker på engelska","Link":"/se/sok?filter=categoryfacet:b%c3%b6cker\u0026filter=grouped_language_sv:engelska","LinkNoFollow":false,"SvgIcon":"english-book-category-icon","CategoryPanelIndex":0,"Index":6,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":" Barn- och ungdomsböcker på engelska\r","link":"/se/sok?filter=grouped_language_sv:engelska\u0026filter=categoryfacet:böcker%2fbarn+%26+ungdom"},{"header":"Nyheter på engelska\r","link":"/se/kampanj/nya-bocker-engelska"},{"header":"Prisbelönta böcker \r","link":"/se/kampanj/womens-prize-for-fiction-1"},{"header":"Coffee table-böcker\r","link":"/se/kampanj/coffee-table-bocker"},{"header":"Skönlitteratur på engelska","link":"/se/sok?filter=grouped_language_sv:engelska\u0026filter=categoryfacet:böcker%2fskönlitteratur"}]}]},{"Promoted":false,"SearchFilter":"","Header":"Bokkampanj","Link":"/se/kampanj/manadens-utvalda-bocker","LinkNoFollow":false,"SvgIcon":"campaigns-icon","CategoryPanelIndex":0,"Index":7,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":"Månadens utvalda böcker 20%\r","link":"/se/kampanj/manadens-utvalda-bocker"},{"header":"Köp 4 pocket betala för 3!","link":"/se/kampanj/billiga-pocket-4for3"}]}]},{"Promoted":false,"SearchFilter":"","Header":"Lästips","Link":"/se/kampanj/personalens-boktips-roman","LinkNoFollow":false,"SvgIcon":"reading-tips-icon","CategoryPanelIndex":0,"Index":8,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":"Adlibrispriset\r","link":"/se/kampanj/adlibrispriset"},{"header":"Augustpriset\r","link":"/se/kampanj/august-nomineringar"},{"header":"Djur \u0026 Natur\r","link":"/se/kampanj/bocker-tradgard"},{"header":"Föräldratips\r","link":"/se/kampanj/foraldratips"},{"header":"Hjälp ditt barn med skolan\r","link":"/se/kampanj/hjalp-med-laxorna"},{"header":"Hållbarhet \u0026 eko\r","link":"/se/kampanj/hallbarhet"},{"header":"Kom i julstämning\r","link":"/se/kampanj/julstamning-bocker-julromaner"},{"header":"Nobelpriset i litteratur \r","link":"/se/kampanj/nobelpriset-i-litteratur"},{"header":"Prisbelönta böcker \r","link":"/se/kampanj/nobelpriset-i-litteratur"},{"header":"Reseguider\r","link":"/se/kampanj/res-i-sverige"},{"header":"Trädgårdsböcker\r","link":"/se/kampanj/bocker-tradgard"},{"header":"Våra lästips\r","link":"/se/kampanj/personalens-boktips-roman"},{"header":"Våra presenttips","link":"/se/kampanj/presentbocker"}]}]},{"Promoted":false,"SearchFilter":"","Header":"Artiklar \u0026 kunskap","Link":"https://www.adlibris.com/sv/artiklar-och-tips","LinkNoFollow":false,"SvgIcon":"articles-content-icon","CategoryPanelIndex":0,"Index":9,"Sections":[]},{"Promoted":false,"SearchFilter":"","Header":"Personalens boktips","Link":"https://www.adlibris.com/sv/artiklar-och-tips/personalens-boktips","LinkNoFollow":false,"SvgIcon":"staff-recommendations-icon","CategoryPanelIndex":0,"Index":10,"Sections":[]},{"Promoted":false,"SearchFilter":"","Header":"Författare","Link":"/sv/forfattare","LinkNoFollow":false,"SvgIcon":"author","CategoryPanelIndex":0,"Index":11,"Sections":[]},{"Promoted":false,"SearchFilter":"","Header":"Presenttips","Link":"/se/kampanj/presentbocker","LinkNoFollow":false,"SvgIcon":"gift-icon","CategoryPanelIndex":0,"Index":12,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":"Fylla-i-böcker\r","link":"/se/kampanj/presenttips-fylla-i-bocker"},{"header":"Intressanta personer \u0026 livsöden\r","link":"/se/kampanj/presenttips-intressanta-personer-livsoden"},{"header":"Muminmuggar\r","link":"/se/kampanj/muminmuggar"},{"header":"Presentkort\r","link":"/se/kampanj/presentkort"},{"header":"Prisvinnare\r","link":"/se/kampanj/presenttips-prisvinnare"},{"header":"Våra bästa presenttips","link":"/se/kampanj/presentbocker"}]}]},{"Promoted":false,"SearchFilter":"","Header":"Topplistor","Link":"/se/kampanj/manadens-topplista","LinkNoFollow":false,"SvgIcon":"top-list-icon","CategoryPanelIndex":0,"Index":13,"Sections":[]},{"Promoted":false,"SearchFilter":"","Header":"Studentlitteratur","Link":"/se/kampanj/studentlitteratur","LinkNoFollow":false,"SvgIcon":"student-category-icon","CategoryPanelIndex":0,"Index":14,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":"Block \u0026 pennor\r","link":"/se/kampanj/block-pennor"},{"header":"E-böcker för student\r","link":"/se/kampanj/ebok-student"},{"header":"Förbered dig för högskoleprovet\r","link":"/se/kampanj/student-hogskoleprovet"},{"header":"Kalkylator \u0026 miniräknare\r","link":"/se/kampanj/miniraknare-kalkylator"},{"header":"Kalendrar \u0026 almanackor","link":"/se/kampanj/terminskalender-almanacka"}]}]},{"Promoted":false,"SearchFilter":"","Header":"OUTLET","Link":"/se/kampanj/fyndhornan","LinkNoFollow":false,"SvgIcon":"outlet-icon","CategoryPanelIndex":0,"Index":15,"Sections":[]},{"Promoted":false,"SearchFilter":"","Header":"Babyprodukter","Link":"/se/avdelning/baby-a1876","LinkNoFollow":false,"SvgIcon":"baby-category-icon","CategoryPanelIndex":0,"Index":16,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":"Bebis på G?","link":"/se/kampanj/gravid-boktips"}]}]},{"Promoted":false,"SearchFilter":"categoryfacet:barnpyssel","Header":"Barnpyssel","Link":"/se/avdelning/barnpyssel-a1467","LinkNoFollow":false,"SvgIcon":"children-diy-category-icon","CategoryPanelIndex":0,"Index":17,"Sections":[]},{"Promoted":false,"SearchFilter":"categoryfacet:fest \u0026 roliga prylar","Header":"Prylar \u0026 presenter","Link":"/se/avdelning/fest-roliga-prylar-a9105","LinkNoFollow":false,"SvgIcon":"party-category-icon","CategoryPanelIndex":0,"Index":18,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":"Muminmuggar","link":"/se/kampanj/muminmuggar"}]}]},{"Promoted":false,"SearchFilter":"categoryfacet:garn \u0026 stickning","Header":"Garn \u0026 stickning","Link":"/se/avdelning/garn-stickning-a1418","LinkNoFollow":false,"SvgIcon":"yarn-category-icon","CategoryPanelIndex":0,"Index":19,"Sections":[]},{"Promoted":false,"SearchFilter":"categoryfacet:papper \u0026 kontor","Header":"Papper \u0026 kontor","Link":"/se/avdelning/papper-kontor-a1000","LinkNoFollow":false,"SvgIcon":"office-supplies-category-icon","CategoryPanelIndex":0,"Index":19,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":"Almanackor \u0026 kalendrar \r","link":"/se/kampanj/terminskalender-almanacka"},{"header":"Block \u0026 pennor\r","link":"/se/kampanj/block-pennor"},{"header":"Bullet journal\r","link":"/se/kampanj/bulletjournal"},{"header":"Filofax\r","link":"/se/kampanj/filofax"},{"header":"För hemmakontoret\r","link":"/se/kampanj/papper-kontor-for-hemmakontoret"},{"header":"Kalkylator \u0026 miniräknare","link":"/se/kampanj/miniraknare-kalkylator"}]}]},{"Promoted":false,"SearchFilter":"categoryfacet:konstnärsmaterial \u0026 diy","Header":"Konstnärsmaterial \u0026 DIY","Link":"/se/avdelning/pyssel-diy-a1197","LinkNoFollow":false,"SvgIcon":"diy-category-icon","CategoryPanelIndex":0,"Index":20,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":"Bullet journal\r","link":"/se/kampanj/bulletjournal"},{"header":"Cricut","link":"/se/kampanj/cricut"}]}]},{"Promoted":false,"SearchFilter":"categoryfacet:leksaker","Header":"Leksaker","Link":"/se/avdelning/leksaker-spel-a1129","LinkNoFollow":false,"SvgIcon":"toys-category-icon","CategoryPanelIndex":0,"Index":22,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":"LEGO nyheter","link":"/se/kampanj/legonyheter"}]}]},{"Promoted":false,"SearchFilter":"categoryfacet:sällskapsspel \u0026 pussel","Header":"Sällskapsspel \u0026 pussel","Link":"/se/avdelning/sallskapsspel-pussel-a1148","LinkNoFollow":false,"SvgIcon":"board-games-category-icon","CategoryPanelIndex":0,"Index":23,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":"Jan Van Haasteren pussel\r","link":"/se/kampanj/pussel-jan-van-haasteren"},{"header":"Ravensburger pussel\r","link":"/se/kampanj/ravensburger"},{"header":"Resespel\r","link":"/se/kampanj/sallskapsspel-resespel"},{"header":"Årets spel","link":"/se/kampanj/arets-familjespel"}]}]}],"MiscellaneousHeader":"","Miscellaneous":[{"Header":"Presentkort","Link":"/se/kampanj/presentkort","LinkNoFollow":false,"SvgIcon":"","CategoryPanelIndex":999,"Index":2,"Sections":[]},{"Header":"Bibliotek \u0026 offentlig verksamhet","Link":"https://www.adlibris.com/storkund/","LinkNoFollow":false,"SvgIcon":"","CategoryPanelIndex":999,"Index":3,"Sections":[{"sectionsHeader":"","sectionLinks":[{"header":"Företag","link":"/se/kampanj/foretag-1"}]}]},{"Header":"Butiker","Link":"/sv/om-adlibris/adlibris-butiker","LinkNoFollow":false,"SvgIcon":"","CategoryPanelIndex":999,"Index":5,"Sections":[]},{"Header":"Kundservice","Link":"/sv/kundservice","LinkNoFollow":false,"SvgIcon":"","CategoryPanelIndex":999,"Index":6,"Sections":[]},{"Header":"Tävlingsvinnare","Link":"/se/kampanj/tavlingsvinnare","LinkNoFollow":false,"SvgIcon":"","CategoryPanelIndex":999,"Index":7,"Sections":[]}],"OffersHeader":"","Offers":[]},
+        homeLink: "/se",
+        userIsLoggedIn: "False" === "True",
+        accountText: "Konto",
+        logInText: "Logga in",
+        search: {
+            showRatingsInSearchResults: true,
+            searchActionUrl: "/se/sok",
+            autocompleteActionUrl: "/se/autocomplete/show",
+            allowEmptySearch: "False".toLowerCase() === "true",
+            hideCategorySelector:
+                "True".toLowerCase() === "true",
+            categorySelectorEnableABTest: "true".toLowerCase() ===
+                'true',
+            currentRouteController: "product",
+            translations: {
+                placeholder: "Böcker, spel, garn, pyssel m.m.",
+                placeholderDesktop:
+                    "Sök bland miljontals böcker, leksaker, garn, köksartiklar och mycket mer! ",
+                categorySelectorPlaceHolder: "Sök inom",
+                categorySelectorAllCategories: "Alla kategorier"
+            }
+        },
+        account: {
+            accountTogglerText: "Konto",
+            accountHeading: "Mitt konto",
+            settings: {
+                url: "/se/konto/settings",
+                text: "Kunduppgifter"
+            },
+            orders: {
+                url: "/se/konto/orders",
+                text: "Beställningar"
+            },
+            wishlist: {
+                url: "/se/onskelista/watch",
+                text: "Önskelistor"
+            },
+            watchlist: {
+                url: "/se/bevakningar/watch",
+                text: "Bevakningar"
+            },
+            library: {
+                url: "/se/konto/library",
+                text: "Digitalt bibliotek"
+            },
+            resetPassword: {
+                url: "/se/konto/requestpassword",
+                text: "Glömt ditt användarnamn eller lösenord?"
+            },
+            login: {
+                heading: "Logga in",
+                togglerText: "Logga in",
+                actionUrl: "/se/konto/login",
+                returnUrl: "/se/bok/introduction-to-econometrics-global-edition-9781292264455",
+                userName: {
+                    labelText: "Användarnamn",
+                    placeholderText: "Användarnamn",
+                    valueMissingMessage: "Användarnamn krävs"
+                },
+                password: {
+                    labelText: "Lösenord",
+                    placeholderText: "Lösenord",
+                    valueMissingMessage: "Lösenord krävs",
+                    tooShortMessage: "Lösenordet är för kort" //TODO add migration
+                },
+                submitText: "Logga in"
+            },
+            createAccount: {
+                heading: "Skapa konto",
+                private: {
+                    url: "/se/konto/createprivate",
+                    text: "För privatperson"
+                },
+                organization: {
+                    url: "/se/konto/createorganisation",
+                    text: "För företag"
+                }
+            },
+            logout: {
+                heading: "<b>Inloggad som:</b> ",
+                buttonText: "Logga ut",
+                formData: {
+                    url: "/se/konto/logout",
+                    returnUrl: "/se/bok/introduction-to-econometrics-global-edition-9781292264455"
+                }
+            }
+        },
+        cart: {
+            CartGetUrl: "/se/minicart/get",
+            CartAddItemUrl: "/se/minicart/add",
+            CartAddItemsUrl: "/se/minicart/addmultiple",
+            CartRemoveItemUrl: "/se/minicart/remove",
+            CartUpdateItemUrl: "/se/minicart/update",
+            CartAbandonedUrl: document.location.origin + "/se/checkouttransfer/recreatecart",
+            CheckoutUrl: "/se/checkouttransfer/transfer",
+            Cookie: {
+                Key: "miniCartID_sv-SE",
+                Value: ""
+            },
+            CultureCode: "sv-SE",
+            LegacyImageSizesEnabled: "True".toLowerCase() === "true",
+            Translations: {
+                cartEmptyMessage: "Varukorgen är tom",
+                cartContainsTransferredGoods: "När alla varor i din beställning har anlänt till vårt lokala lager kommer de att <strong>skickas i samma paket</strong>.",
+                cartText: "Varukorg",
+                closeText: "Stäng",
+                defaultErrorMessage: "Något gick fel! Försök igen!",
+                discountHeaderText: "Rabatt",
+                loadingCartMessage: "Laddar varukorgen...",
+                quantityOfText: "st av",
+                toCheckoutText: "Till kassan",
+                totalHeaderText: "Summa inkl moms",
+                wasAddedText: "är tillagd i varukorgen.",
+                and: "och"
+            }
+                    },
+        notification: {
+            addToCart: {
+                abTestVersion: 0,
+                showCartText: "Visa varukorg",
+                closeButtonText: "Fortsätt handla"
+            },
+            infoBanner: {
+            textColor: "#FFFFFF",
+                backgroundColor: "#e81121",
+                linkColor: "#FFFFFF",
+                mobileText: "",
+                desktopText: ""
+            }
+        },
+        translations: {
+            loadingPage: "Laddar sidans innehåll..."
+        },
+        webpackBundlePathLongTermCache: "https://s3.adlibris.com/dist/long_term_cache202409181015",
+        controllerName: "product",
+        actionName: "show-slug",
+        useAdobeDRMNotice: true,
+        adobeDRMNotice: {
+            strong: " ",
+            text: "Den här e-boken är kopieringsskyddad med Adobe DRM vilket påverkar var du kan läsa den.",
+            link: {
+                href: "https://www.adlibris.com/sv/kundservice/fragor/hur-du-laddar-ned-adobe-drm-skyddad-e-bok",
+                text: "Läs mer"
+            }
+        },
+        serverDateTime: "2025-04-09"
+    };
+</script>
+
+
+    <script>
+        window.pageData = {"Product":{"ProductKey":"129acef5-8396-4b36-a1dc-a1567718c423","Brand":null,"SelectableAttributes":null},"ProductVariants":[{"VariantKey":"9c8287ad-fe5f-40ad-b31d-b44559f81a41","ProductType":"B","Sku":"P39476375","Ticket":"Oy9zZWFyY2hhcGktcHJvZHVjdC1saXN0OyM7cHJvZHVjdF9rZXk7MTI5QUNFRjUtODM5Ni00QjM2LUExREMtQTE1Njc3MThDNDIzOzlDODI4N0FELUZFNUYtNDBBRC1CMzFELUI0NDU1OUY4MUE0MTtPQkpFQ1RJVkUkO05PTkU6Tk9ORTs3OTs","Ean":"9781292264455","Title":"Introduction to Econometrics, Global Edition","PageTitle":"Introduction to Econometrics, Global Edition - James Stock, Mark Watson - häftad (9781292264455) | Adlibris Bokhandel","Authors":["James Stock","Mark Watson"],"Contributors":[{"FullName":"James Stock","LastName":"Stock","FirstName":" James","ContributorType":1},{"FullName":"Mark Watson","LastName":"Watson","FirstName":" Mark","ContributorType":1}],"IsAudioBook":false,"IsPhysicalAudioBook":false,"IsEbook":false,"IsGiftcard":false,"Description":"\u003cstrong\u003eLearn more about modern Econometrics with this comprehensive introduction to the field, featuring engaging applications and bringing contemporary theories to life.\u003c/strong\u003e \u003cp\u003e\u003cstrong\u003eIntroduction to Econometrics, 4th Edition\u003c/strong\u003e, \u003cstrong\u003eGlobal Edition \u003c/strong\u003eby Stock and Watson is the ultimate introductory guide that connects modern theory with motivating, engaging applications.\u003c/p\u003e \u003cp\u003eThe text ensures you get a solid grasp of this challenging subject\u0027s theoretical background, building on the philosophy that applications should drive the theory, not the other way around. The latest edition maintains the focus on currency, focusing on empirical analysis and incorporating real-world questions and data by using results directly relevant to the applications.\u003c/p\u003e \u003cp\u003eThe text contextualises the study of Econometrics with a comprehensive introduction and review of economics, data, and statistics before proceeding to an extensive regression analysis studying the different variables and regression parameters. With a large data set increasingly used in Economics and related fields, a new chapter dedicated to Big Data will help you learn more about this growing and exciting area.\u003c/p\u003e \u003cp\u003eSharing a variety of resources and tools to help your understanding and critical thinking of the topics introduced, such as General Interest boxes, or end-of-chapter, and empirical exercises and summaries, this industry-leading text will help you acquire a sophisticated knowledge of this fascinating subject.\u003c/p\u003e \u003cp\u003e\u003cstrong\u003eReach every student by pairing this text with Pearson MyLab® Economics\u003c/strong\u003e\u003c/p\u003e \u003cp\u003eMyLab is the teaching and learning platform that empowers you to reach every student. By combining trusted author content with digital tools and a flexible platform, MyLab® personalises the learning experience and improves results for each student.\u003c/p\u003e \u003cp\u003eIf you would like to purchase both the physical text and MyLab Economics search for:\u003c/p\u003e \u003cp\u003e9781292264561 Introduction to Econometrics, 4th Edition, Global Edition with MyLab Economics\u003c/p\u003e \u003cp\u003ePackage consists of:\u003c/p\u003e \u003cul\u003e\u003cli\u003e9781292264455 Introduction to Econometrics, 4th Edition, Global Edition\u003c/li\u003e\u003cli\u003e9781292264516 Introduction to Econometrics, 4th Edition, Global Edition MyLab Economics\u003c/li\u003e\u003cli\u003e9780136879787 Introduction to Econometrics, 4th Edition, Global Edition Pearson eText\u003c/li\u003e\u003c/ul\u003e \u003cp\u003e\u003cstrong\u003ePearson MyLab® Economics is not included.\u003c/strong\u003e Students, if Pearson MyLab Economics is a recommended/mandatory component of the course, please ask your instructor for the correct ISBN. Pearson MyLab® Economics should only be purchased when required by an instructor. Instructors, contact your Pearson representative for more information.\u003c/p\u003e","ListOfContent":null,"Nutritional":null,"MetaDescription":"häftad, 2019. Köp boken Introduction to Econometrics, Global Edition av James Stock, Mark Watson (ISBN 9781292264455) hos Adlibris. Fraktfritt över 349 kr Alltid bra priser och snabb leverans. | Adlibris","GroupedLanguage":"Engelska","GroupedLanguageEn":"English","Published":"20190513","Format":"häftad","FormatSv":"häftad","VariantUrl":"/se/bok/introduction-to-econometrics-global-edition-9781292264455","Subtitle":null,"CategoryIdPath":"2$25101016","SelectedCategoryTree":"Böcker/Ekonomi \u0026 Juridik/Ekonomi \u0026 Management/Nationalekonomi/Ekonometri","DetailedColor":null,"DetailedColorColorCode":null,"ProductInfo":{"Authors":{"Heading":"Författare","Values":[{"Value":"James Stock","RawValue":null,"Link":"/se/sok?filter=author%3AJames%20Stock","Unit":null},{"Value":"Mark Watson","RawValue":null,"Link":"/se/sok?filter=author%3AMark%20Watson","Unit":null}]},"Ean":{"Heading":"ISBN","Values":[{"Value":"9781292264455","RawValue":null,"Link":null,"Unit":null}]},"Language":{"Heading":"Språk","Values":[{"Value":"Engelska","RawValue":null,"Link":null,"Unit":null}]},"Weight":{"Heading":"Vikt","Values":[{"Value":"1460","RawValue":null,"Link":null,"Unit":"gram"}]},"Published":{"Heading":"Utgiven","Values":[{"Value":"2019-05-13","RawValue":null,"Link":null,"Unit":null}]},"Publisher":{"Heading":"Förlag","Values":[{"Value":"Pearson Education Limited","RawValue":null,"Link":"/se/sok?filter=publisher%3APearson%20Education%20Limited","Unit":null}]},"Page":{"Heading":"Antal sidor","Values":[{"Value":"800","RawValue":null,"Link":null,"Unit":null}]}},"BookPreviewLink":null,"Sale":null,"Images":{"SelectionImages":[],"ProductImages":[{"Url":"https://s2.adlibris.com/images/49038499/introduction-to-econometrics-global-edition.jpg","SrcSet":null,"AltText":"Introduction to Econometrics, Global Edition"}]},"DeliveryInformation":{"Message":"","IsQuickDelivery":false,"InventoryStatus":0,"EarliestWorkingDays":0,"LatestWorkingDays":0,"MaxCartQuantity":0,"QuantityLeft":0,"Disclaimer":null,"InStock":false,"KkvMessage":null,"KkvDeliveryMessage":null,"KkvDeliveryEarliestDays":0,"KkvDeliveryLatestDays":0,"DeliveryInformationTooltip":null,"IsPreOrder":false},"Videos":[],"Embeddeds":[],"AlternateLinks":[{"Href":"/no/bok/introduction-to-econometrics-global-edition-9781292264455","HrefLang":"no-no"},{"Href":"/fi/kirja/introduction-to-econometrics-global-edition-9781292264455","HrefLang":"fi-fi"},{"Href":"/fi/sv/bok/introduction-to-econometrics-global-edition-9781292264455","HrefLang":"sv-fi"}],"Language":"Engelska","CategoryNamePath":"Böcker/Ekonomi \u0026 Juridik/Ekonomi \u0026 Management/Nationalekonomi/Ekonometri"}],"ShippingInformation":null,"RecommendationPanels":[{"Name":"recommend-by-series","Heading":"Böcker i serie"},{"Name":"recommend-by-author","Heading":"Fler titlar av samma författare"},{"Name":"those-who-bought-also-bought","Heading":"Andra har även köpt"},{"Name":"recommend-by-book","Heading":"Du kanske gillar"},{"Name":"book-top-sellers","Heading":"Topplistan"}],"RecommendationPanelsPageKey":"product-page","AddToWishlistUri":"/se/onskelista/addfrompanel","DeleteFromWishlistUri":"/se/onskelista/deleteitemfromdefaultwishlist","AlreadyInWishlistUri":"/se/onskelista/exists","GetRecommendationsAsJsonUri":"/se/recommendation/recommendations","AddToCartUri":"/se/shoppingcart/add","WatchProductUri":"/se/bevakningar/add","BreadcrumbsViewModel":{"Breadcrumbs":[],"CurrentBreadcrumb":{"Name":"Introduction to Econometrics, Global Edition","Url":""},"RootBreadcrumb":{"Name":null,"Url":null},"ShowRootBreadcrumb":false,"IsOnStartpage":true,"SetItemProp":true,"ItemProp":"category"},"GetDeliveryPromisesUri":"/se/deliverypromise/getdeliverypromises","GetProductPricesUri":"/se/productprice/pricesforvariants","GetProductMetaDataUri":"/se/productmetadata","CampaignId":null,"GetCategoryUri":"/se/productcategory?categoryIds=25101016","FreeShippingLimit":349,"IsYarnCategory":false,"ProductVariantsUri":"/se/productvariants","ShowNewProductPageOldImages":true,"GetCampaignUri":"/se/productcampaign","Translations":{"BookPreview":"Läs ett smakprov","BundleForPriceOf":"Köp båda för","VerifiedBuyer":"Verifierad köpare","ReviewFrom":"Från ","ReviewNote":"Recensioner från verifierade köpare skrivs uteslutande av kunder som köpt varan hos Adlibris.com. Recensioner kompletteras även med recensioner skrivna på Boktipset.","ReviewNoteLinkUrl":"https://www.adlibris.com/sv/kundservice/fragor/bok--och-produktrecensioner-pa-adlibris","ReviewNoteLinkText":"Läs mer om hur vi jobbar med recensioner här.","FrequentlyBoughtTogether":"Köps ofta tillsammans","AvailableFormats":"Fler bokformat","Loading":"Laddar...","AddAudioBookToCart":"Köp ljudbok","AddEbookToCart":"Köp E-bok","AddedToCart":"Tillagd i varukorg","AddToCart":"Lägg i varukorg","Amount":"stycken","AudioPreview":"Provlyssna på ljudboken","Author":"Författare","BookCategoriesHeader":"Boken finns i kategorierna:","BookDecription":"Beskrivning","BookDecriptionMissing":"Bokbeskrivning saknas","Brand":"Varumärke","CampaignsHeader":"Ingår i följande kampanjer:","ChooseBetween":"Välj bland","ChooseBetweenColors":"st färger:","ChooseColor":"Välj färg:","ChooseQuantity":"Välj antal","Color":"Färg","ColorOutOfStock":"Snart tillbaka i lager:","DeliveryInformationMessageAdobeDRM":"Läs i Adobe DRM-kompatibel e-boksläsare","DeliveryInformationMessageAudioType":"Lyssna i vår app eller ladda ned","DeliveryInformationMessageReadAndDownload":"Läs i vår app eller ladda ned","EbookPreview":"Provläs","EbookPreviewHeader":"Provläsning av ebokutgåvan","EbookPreviewLoading":"Provläs laddas...","Format":"Bokformat","FreeShippingForProduct":" ","FreeShippingOverXAmount":" ","Grade":"Betyg","ImageTouchInstructions":"Dra med fingret över bilden","ImageZoomInstructionsClick":"Zooma (klicka på bilden)","ImageZoomInstructionsHover":"Zooma (klicka på bilden)","IncludedInFollowingCampaigns":"Ingår in foljande kampanjer","ListOfContent":"Innehållsförteckning","LoadingMoreProducts":"Laddar fler produkter","LoadingReviews":"Laddar recensioner...","LoginMessage":"Du behöver vara inloggad för att lägga produkten i önskelistan.","MoreBooksIn":"Fler böcker inom","NotifyMe":"Meddela mig","NutritionalContent":"Näringsdeklaration","Of":"av","PreOrder":"Förboka","ProductDecription":"Beskrivning","ProductDecriptionMissing":"Produktbeskrivning saknas","ProductInformation":"Produktinfo","ReadLess":"Läs mindre","ReadMore":"Läs mer","ReadReviews":"Läs recensioner","ReviewedBy":"Kommentar av","Reviews":"Recensioner","SavedToWishlist":"Sparad","SaveToWishlist":"Spara","SaveToWishlistDesktop":"Spara till önskelista","ShowLessColors":"Visa färre färger","ShowLessFormats":"Visa färre format","ShowMoreColors":"Visa fler färger","ShowMoreFormats":"Visa fler format","ShowMoreProducts":"Visa fler produkter","ShowMoreReviews":"Visa fler recensioner","ShowOriginalResImage":"Visa originalbild","TemporaryOutOfStock":"Tillfälligt slut","Within":"inom"},"productCssBaseClass":"product","FacebookAppId":934517279956607,"CurrentVariantKey":"9c8287ad-fe5f-40ad-b31d-b44559f81a41","GetBundlePriceUri":"/se/productbundle/price","DeliveryInfo":{"9781292264455":{"Message":null,"IsQuickDelivery":false,"InventoryStatus":10,"EarliestWorkingDays":0,"LatestWorkingDays":0,"MaxCartQuantity":0,"QuantityLeft":0,"Disclaimer":null,"InStock":false,"KkvMessage":null,"KkvDeliveryMessage":null,"KkvDeliveryEarliestDays":0,"KkvDeliveryLatestDays":0,"DeliveryInformationTooltip":null,"IsPreOrder":false}},"GetReadingSampleUri":"/se/readingsample","CurrentQuantity":1,"PrimaryActionButtonVersion":0,"GetBookGradeUri":"/se/productreview/bookgrade","GetNonBookGradeUri":"/se/productreview/nonbookgrade","GetBookReviewsUri":"/se/productreview/bookreviews","GetNonBookReviewsUri":"/se/productreview/nonbookreviews"};
+    </script>
+    <script>
+        window.webpackBundlePath = "https://s3.adlibris.com/dist/222aa76b8305d03cf28db43d1cb05dc1af4cb93d";
+        window.webpackBundlePathLongTermCache = "https://s3.adlibris.com/dist/long_term_cache202409181015";
+    </script>
+    <script src="https://s3.adlibris.com/dist/222aa76b8305d03cf28db43d1cb05dc1af4cb93d/runtime.js"></script>
+    <script src="https://s3.adlibris.com/dist/222aa76b8305d03cf28db43d1cb05dc1af4cb93d/vendor.js"></script>
+    <script src="https://s3.adlibris.com/dist/222aa76b8305d03cf28db43d1cb05dc1af4cb93d/newGlobals.js"></script>
+    <script src="https://s3.adlibris.com/dist/222aa76b8305d03cf28db43d1cb05dc1af4cb93d/tryggEHandelSE.js"></script>
+
+    
+    
+
+<meta property="fb:app_id" content="934517279956607" />
+<meta property="og:title" content="Introduction to Econometrics, Global Edition" />
+<meta property="og:description" content="&lt;strong&gt;Learn more about modern Econometrics with this comprehensive introduction to the field, featuring engaging applications and bringing contemporary theories to life.&lt;/strong&gt; &lt;p&gt;&lt;strong&gt;Introduction to Econometrics, 4th Edition&lt;/strong&gt;, &lt;strong&gt;Global Edition &lt;/strong&gt;by Stock and Watson is the ultimate introductory guide that connects modern theory with motivating, engaging applications.&lt;/p&gt; &lt;p&gt;The text ensures you get a solid grasp of this challenging subject&#39;s theoretical background, building on the philosophy that applications should drive the theory, not the other way around. The latest edition maintains the focus on currency, focusing on empirical analysis and incorporating real-world questions and data by using results directly relevant to the applications.&lt;/p&gt; &lt;p&gt;The text contextualises the study of Econometrics with a comprehensive introduction and review of economics, data, and statistics before proceeding to an extensive regression analysis studying the different variables and regression parameters. With a large data set increasingly used in Economics and related fields, a new chapter dedicated to Big Data will help you learn more about this growing and exciting area.&lt;/p&gt; &lt;p&gt;Sharing a variety of resources and tools to help your understanding and critical thinking of the topics introduced, such as General Interest boxes, or end-of-chapter, and empirical exercises and summaries, this industry-leading text will help you acquire a sophisticated knowledge of this fascinating subject.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Reach every student by pairing this text with Pearson MyLab&#174; Economics&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;MyLab is the teaching and learning platform that empowers you to reach every student. By combining trusted author content with digital tools and a flexible platform, MyLab&#174; personalises the learning experience and improves results for each student.&lt;/p&gt; &lt;p&gt;If you would like to purchase both the physical text and MyLab Economics search for:&lt;/p&gt; &lt;p&gt;9781292264561 Introduction to Econometrics, 4th Edition, Global Edition with MyLab Economics&lt;/p&gt; &lt;p&gt;Package consists of:&lt;/p&gt; &lt;ul&gt;&lt;li&gt;9781292264455 Introduction to Econometrics, 4th Edition, Global Edition&lt;/li&gt;&lt;li&gt;9781292264516 Introduction to Econometrics, 4th Edition, Global Edition MyLab Economics&lt;/li&gt;&lt;li&gt;9780136879787 Introduction to Econometrics, 4th Edition, Global Edition Pearson eText&lt;/li&gt;&lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Pearson MyLab&#174; Economics is not included.&lt;/strong&gt; Students, if Pearson MyLab Economics is a recommended/mandatory component of the course, please ask your instructor for the correct ISBN. Pearson MyLab&#174; Economics should only be purchased when required by an instructor. Instructors, contact your Pearson representative for more information.&lt;/p&gt;" />
+<meta property="og:image:secure_url" content="https://s2.adlibris.com/images/49038499/introduction-to-econometrics-global-edition.jpg" />
+<meta property="og:image" content="Infrastructure.Models.Image" />
+<meta property="og:site_name" content="Adlibris" />
+<meta property="og:url" content="https://www.adlibris.com/se/bok/introduction-to-econometrics-global-edition-9781292264455" />
+    <meta property="og:type" content="books.book" />
+    <meta property="books:isbn" content="9781292264455" />
+
+</body>
+</html>
